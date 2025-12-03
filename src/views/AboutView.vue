@@ -12,7 +12,7 @@ const time = ref<string>('')
 
 const changeTime = () => {
   setInterval(() => {
-    time.value = new Date().toDateString()
+    time.value = new Date().getTime().toString()
   }, 1000)
 }
 
